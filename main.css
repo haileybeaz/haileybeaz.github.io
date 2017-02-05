@@ -80,12 +80,7 @@ body{
     margin-bottom: -10px;
     display: inline-flex;
 }
-#current{
-    margin: 100%;
-
-}
 .weatherimg{
-    width: 100%;
     margin: -8px;
     position: absolute;
     z-index: 1;
