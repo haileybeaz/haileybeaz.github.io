@@ -81,6 +81,7 @@ body{
     display: inline-flex;
 }
 .weatherimg{
+    min-width: 5px;
     margin: -8px;
     position: absolute;
     z-index: 1;
@@ -157,20 +158,19 @@ body{
 }
 footer{
     background-color: #000000;
-    margin-left: -2%;
-    margin-right: -2%;
+    width: 100%;
     padding: 2px;
 }
 footer ul,li,h2,img{
     background: transparent;
 }
 footer ul{
-    margin-left: 8%;
+    margin-left: 7%;
 }
 footer li{
     text-align: center;
     display: inline;
-    margin-right: 20px;
+    margin-right: 4%;
 }
 footer p{
     text-align: left;
