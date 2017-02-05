@@ -108,7 +108,7 @@ body{
     background: transparent;
     position: absolute;
     z-index: 3;
-    margin-right: 10px;
+    margin-right: 40px;
     margin: 110px;
     margin-left: 140px;
     font-size: 50px;
@@ -127,7 +127,7 @@ body{
     position: absolute;
     z-index: 3;
     margin: 190px;
-    margin-right: 1px;
+    margin-right: 10px;
     margin-left: 290px;
 }
 #hourly{
@@ -149,7 +149,8 @@ body{
 #detail{
     background-color: #FFFFFF;
     color: #000000;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -159,7 +160,8 @@ body{
 }
 footer{
     background-color: #000000;
-    padding: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 footer ul,li,h2,img{
     background: transparent;
