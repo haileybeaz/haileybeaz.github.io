@@ -108,6 +108,7 @@ body{
     background: transparent;
     position: absolute;
     z-index: 3;
+    margin-right: 10px;
     margin: 110px;
     margin-left: 140px;
     font-size: 50px;
@@ -130,13 +131,12 @@ body{
     margin-left: 290px;
 }
 #hourly{
-    margin-top: 75%;
+    margin-top: 285px;
 }
 #hourly table{
     width: 100%;
     border: 1px solid #ffffff;
     text-align: center;
-    margin-left: 2px;
     border-spacing: 2px 10px;
 }
 #hourly tr{
@@ -151,8 +151,6 @@ body{
     color: #000000;
     padding: 5px;
     margin-top: 20px;
-    margin-left: -10%;
-    margin-right: -10%;
     margin-bottom: 20px;
 }
 #detail h2, p {
@@ -161,7 +159,6 @@ body{
 }
 footer{
     background-color: #000000;
-    width: 100%;
     padding: 2px;
 }
 footer ul,li,h2,img{
