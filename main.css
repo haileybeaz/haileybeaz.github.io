@@ -77,19 +77,22 @@ body{
     color: white;
 }
 #summary{
-    background-image: url("images/sunny.jpg");
     margin-bottom: -10px;
-    display: inline-flex;
-    z-index: -1;
+    display: inline-block;
 }
-
+.weatherimg{
+    min-width: 5px;
+    margin: -8px;
+    position: absolute;
+    z-index: 1;
+}
 #circle {
     position: absolute;
     opacity: .5;
     background: transparent;
     margin: 40px;
     margin-left: 100px;
-    z-index: 1;
+    z-index: 2;
 }
 #location {
     background: transparent;
