@@ -81,6 +81,7 @@ body{
     display: inline-flex;
 }
 .weatherimg{
+    width: 100%;
     margin: -8px;
     position: absolute;
     z-index: 1;
@@ -126,10 +127,10 @@ body{
     margin-left: 290px;
 }
 #hourly{
-    margin-top: 275px;
+    margin-top: 75%;
 }
 #hourly table{
-    width: 380px;
+    width: 100%;
     border: 1px solid #ffffff;
     text-align: center;
     margin-left: 2px;
