@@ -80,6 +80,7 @@ body{
     display: inline-block;
 }
 .weatherimg{
+    width: 100%;
     min-width: 5px;
     margin: -8px;
     position: absolute;
@@ -154,6 +155,7 @@ body{
     background-color: #FFFFFF;
     color: #000000;
     padding-top: 5px;
+    width: 100%;
     padding-bottom: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -164,6 +166,7 @@ body{
 }
 footer{
     background-color: #000000;
+    width: 100%;
     padding-top: 2px;
     padding-bottom: 2px;
 }
@@ -171,12 +174,12 @@ footer ul,li,h2,img{
     background: transparent;
 }
 footer ul{
-    margin-left: 7%;
+    margin-left: 30px;
 }
 footer li{
     text-align: center;
     display: inline;
-    margin-right: 4%;
+    margin-right: 15px;
 }
 footer p{
     text-align: left;
