@@ -1,0 +1,319 @@
+.dropbtn {
+background-color: #F9C42A;
+color: #FFFFFF;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+.dropbtn:checked ~ .dropdown-content{
+display: block;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #444444;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba (0, 0, 0, 0.2);
+padding: 12px 16px;
+z-index: 5;
+}
+
+.dropdown-content a {
+color: #FFFFFF;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #F9C42A;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: #F9C42A;
+}
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans|Playfair+Display');
+* {
+box-sizing: border-box;
+background-color: #444444;
+}
+
+#menuimg {
+
+background-color: #F9C42A;
+color: #FFFFFF;
+padding: 20px;
+width: 90px;
+border: none;
+}
+ul, ol, label  {
+margin: 0;
+padding: 0;
+}
+
+label{
+background-color: #7E1516;
+text-align: center;
+color: white;
+display: block;
+padding: 15px;
+
+}
+input{
+display: none;
+}
+
+#menu{
+display: none;
+}
+
+#menu a{
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: #2F3036;
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+width: 100%;
+text-align: center;
+}
+#menu a:hover{
+background-color: #7E1516;
+}
+
+#toggle:checked ~ #menu{
+display: inline;
+}
+
+@media (min-width: 500px){
+nav label, #toggle{
+display: none;
+}
+#toggle:not(:checked) ~ #menu{
+display: inline;
+}
+
+#menu li {
+display:inline;
+}}
+
+
+#searchimg {
+background: transparent;
+background-color: #F9C42A;
+width: 80px;
+height: 70px;
+padding: 8px;
+}
+
+body {
+margin: 2%;
+padding: 0;
+font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+color: white;
+}
+
+#summary {
+margin-bottom: -10px;
+display: inline-block;
+}
+
+.weatherimg {
+width: 100%;
+min-width: 5px;
+position: relative;
+top: 100px;
+z-index: 1;
+}
+
+#circle {
+display: inline-block;
+position: relative;
+bottom: 300px;
+left: 150px;
+opacity: .5;
+background: transparent;
+z-index: 2;
+}
+
+#location {
+background: transparent;
+display: inline-block;
+width: 100%;
+text-align: center;
+position: relative;
+top: 200px;
+z-index: 2;
+}
+
+#temp {
+display: block;
+background: transparent;
+position: relative;
+z-index: 3;
+margin-right: 0px;
+margin: 110px;
+margin-left: 140px;
+font-size: 50px;
+padding: 5px;
+}
+
+#low {
+display: block;
+background: transparent;
+position: relative;
+z-index: 3;
+margin-right: 0px;
+margin: 190px;
+margin-left: 80px;
+padding: 5px;
+}
+
+#high {
+display: block;
+background: transparent;
+position: relative;
+z-index: 3;
+margin: 190px;
+margin-right: 0px;
+margin-left: 290px;
+padding: 5px;
+}
+
+#hourly {
+margin-top: 75%;
+}
+
+#hourly table {
+width: 100%;
+border: 1px solid #ffffff;
+text-align: center;
+border-spacing: 2px 10px;
+}
+
+#hourly tr {}
+
+#hourly td {
+margin-bottom: 5px;
+border-right: 1px solid #ffffff;
+padding: 4px;
+}
+#hourly td:last-child{
+border-right: 0;
+}
+
+#detail {
+background-color: #FFFFFF;
+color: #000000;
+padding-top: 5px;
+width: 100%;
+padding-bottom: 5px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#detail h2,
+p {
+background: transparent;
+text-align: center;
+}
+
+footer {
+background-color: #000000;
+width: 100%;
+padding-top: 2px;
+padding-bottom: 2px;
+}
+
+footer ul,
+li,
+h2,
+img {
+background: transparent;
+width: 50px;
+}
+
+footer ul {
+margin-left: 30px;
+}
+
+footer li {
+text-align: center;
+display: inline-block;
+margin-right: 15px;
+}
+
+footer p {
+text-align: left;
+margin-left: 0px;
+padding-left: 20px;
+padding-bottom: 2px;
+font-size: 10px;
+}
+
+footer h2 {
+font-size: 18px;
+text-align: center;
+}
+/* media query for medium screens*/
+@media only screen and (min-width: 600px) and (max-width: 768px){
+label, #searchimg{
+display: none;
+}
+.dropdown {
+display: block;
+}
+.dropdown-content{
+display: inline;
+padding: 5px;
+padding-right: 2px;
+padding-left: 2px;
+}
+.dropdown-content a{
+display: inline;
+padding: 10px;
+}
+nav li{
+display: inline;
+
+}
+footer {
+background-color: goldenrod;
+}
+}
+/* media query for large screen */
+@media only screen and (min-width: 768px){
+label, #searchimg{
+display: none;
+}
+#menu {
+display: inline-block;
+padding: 5px;
+padding-right: 2px;
+padding-left: 2px;
+}
+#menu a{
+display: inline-block;
+padding: 10px;
+}
+nav li{
+display: inline;
+
+}
+footer {
+background-color: gold;
+}
+}

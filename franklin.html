@@ -11,23 +11,27 @@
 <body>
     <header>
         <h1>Local Weather</h1>
-        <nav class="dropdown">
-            <button class="dropbtn"><img id="menuimg" src="my-icons-collection-2/svg/dropdownbutton.png" alt="button" width=50px/></button>
-            <ul class="dropdown-content">
+        <nav>
+            <label for="toggle"><img id="menuimg" src="my-icons-collection-2/svg/dropdownbutton.png" alt="button" /></label>
+            <input id="toggle" type="checkbox">
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="franklin.html">Franklin</a></li>
                 <li><a href="greenville.html">Greenville</a></li>
                 <li><a href="springfield.html">Springfield</a></li>
-            </ul> <img id="searchimg" src="my-icons-collection-2/svg/search.png" alt="search button" /> </nav>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="summary">
-            <h2 id="location">Franklin, Idaho</h2> <img class="weatherimg" src="images/sunny.jpg" alt="sunny" width=400px/> <img id="circle" src="images/Artboard%201.svg" alt="temperature" width=200px/>
-            <p id="temp"> 74 F &deg;</p>
-            <p id="low">Low
-                <br/> 66 F &deg;</p>
-            <p id="high">High
-                <br/> 90 F &deg;</p>
+            <h2 id="location" class="ginfo">Franklin, Idaho</h2> <img class="weatherimg" src="images/sunny.jpg" alt="sunny" />
+            <ul>
+                <li id="temp" class="ginfo"> 74&deg; F </li>
+                <li id="low" class="ginfo">Low
+                    <br/> 66&deg; F </li>
+                <li id="high" class="ginfo">High
+                    <br/> 90&deg; F </li>
+            </ul>
         </section>
         <section id="hourly">
             <table>
@@ -61,19 +65,24 @@
         <h2>Share the Weather</h2>
         <ul>
             <li>
-                <a href="https://www.facebook.com/"><img src="185958-social-media-icons/svg/facebook.svg" target="_blank" alt="facebook" width=50px/></a>
+                <a href="https://www.facebook.com/"><img src="185958-social-media-icons/svg/facebook.svg" alt="facebook" /></a>
             </li>
             <li>
-                <a href="https://twitter.com/"><img src="185958-social-media-icons/svg/twitter.svg" target="_blank" alt="twitter" width=50px/></a>
+                <a href="https://twitter.com/"><img src="185958-social-media-icons/svg/twitter.svg" alt="twitter" /></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/"><img src="185958-social-media-icons/svg/instagram.svg" target="_blank" alt="instagram" width=50px/></a>
+                <a href="https://www.instagram.com/"><img src="185958-social-media-icons/svg/instagram.svg" alt="instagram" /></a>
             </li>
             <li>
-                <a href="https://www.snapchat.com/"><img src="185958-social-media-icons/svg/snapchat.svg" target="_blank" alt="snapchat" width= 50px/></a>
+                <a href="https://www.snapchat.com/"><img src="185958-social-media-icons/svg/snapchat.svg" alt="snapchat" /></a>
             </li>
+            <li id="copyright"> copyright haileybeaz &copy; </li>
         </ul>
-        <p> copyright haileybeaz &copy; </p>
-    </footer> <img src="homework/images/iPhone%205SE%20%E2%80%93%201.png" alt="wireframe" /> </body>
+
+    </footer>
+    <img id="wireframe1" src="homework/images/iPhone%205SE%20%E2%80%93%201.png" alt="wireframe" />
+    <img id="wireframe2" src="homework/images/iPad%20%E2%80%93%201.png" alt="wireframe"/>
+    <img id="wireframe3" src="homework/images/Web%201920%20%E2%80%93%201.png" alt="wireframe"/>
+</body>
 
 </html>
