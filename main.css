@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans|Playfair+Display');
+
 * {
     box-sizing: border-box;
     background-color: #444444;
@@ -109,6 +110,7 @@ body {
 }
 
 #hourly {
+    display: none;
     margin-top: 20px;
 }
 #hourly table {
@@ -181,7 +183,7 @@ footer h2 {
     font-size: 18px;
     text-align: center;
 }
-@media only screen and (min-width:0px){
+@media only screen and (min-width:320px){
 
     nav label, #toggle{
         display: none;
@@ -235,6 +237,9 @@ footer h2 {
         top: 45%;
         left: 30%;
         padding: 5px;
+    }
+    #hourly{
+        display: inherit;
     }
     .ginfo{
         position: absolute;
