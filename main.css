@@ -11,6 +11,11 @@ ul, ol, label  {
 header{
     text-align: left;
 }
+header nav{
+    text-align: right;
+    font-size: 20px;
+
+}
 header h1{
     margin-left: 20px;
 }
@@ -478,5 +483,5 @@ footer h2 {
 
 }
 
-
+/* steven helped in usability assessment/*
 
