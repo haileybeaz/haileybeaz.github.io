@@ -1,9 +1,21 @@
-*{
+* {
     background-color: gray;
     margin: 2%;
 }
-img{
-    width:100%;
+
+img {
+    width: 100%;
     max-width: 1000px;
 }
-p{}
+
+p {
+    max-width: 400px;
+}
+.line{
+    padding: 10px;
+    background-color: #000000;
+    width: 100%;
+}
+h1{
+    margin-left: 2%;
+}
