@@ -91,6 +91,18 @@ body {
     padding: 125px;
     max-width: 800px;
 }
+#summary3{
+    background-image: url(images/cloudy.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 125px;
+    max-width: 800px;
+}
 #sumcontent, #sumcontent ul{
     background: transparent;
     list-style: none;
@@ -345,6 +357,7 @@ footer h2 {
     #hourly{
         width: 47%;
         padding: 10px;
+        margin-left: 53%;
         margin-bottom: 450px;
     }
     #detail{
