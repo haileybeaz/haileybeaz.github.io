@@ -114,7 +114,7 @@ body {
     background: transparent;
 }
 
-#location {
+.location {
     background: transparent;
     text-align: center;
     width: 100%;

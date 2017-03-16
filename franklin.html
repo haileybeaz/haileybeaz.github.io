@@ -6,7 +6,43 @@
     <title>Franklin, Id | Feeling Lucky? Local Weather</title>
     <meta name="viewport" content="width=device-width">
     <link href="normalize.css" type="text/css" rel="stylesheet" />
-    <link href="main.css" type="text/css" rel="stylesheet" /> </head>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        jQuery (document).ready(function ($) {
+            $.ajax({
+                url: "js/weather.json"
+                , dataType: "json"
+                , success: function (data) {
+                    console.log(data);
+                    var location = data['Franklin']['City'];
+                    var state = data['Franklin']['State'];
+                    var temp_f = data['Franklin']['High'];
+                    var low = data['Franklin']['Low'];
+                    var high = data['Franklin']['High'];
+                    var precipitation = data['Franklin']['Precip'];
+                    var wind = data['Franklin']['Wind']
+                    var direction = data['Franklin']['Direction'];
+                    console.log("Current temperature in " + location + " is: " + temp_f);
+                    var place = $('#place');
+                    var low_temp = $('#low_temp');
+                    var high_temp = $('#high_temp');
+                    var precip = $('#precipitation');
+                    var windy = $('#wind');
+                    //                    var temp = $('#temp');
+                    //                    var message = $('#message');
+                    place.text(location + ', ' + state);
+                    low_temp.text(low + ' F');
+                    high_temp.text(high + ' F');
+                    precip.text(precipitation);
+                    windy.text(wind + ' ' + direction);
+                    //                    temp.text(temp_f);
+                    //                    message.text("Current temperature in " + location + " is: " + temp_f)
+                }
+            });
+        });
+    </script>
+    </head>
 
 <body>
     <header>
@@ -24,12 +60,11 @@
     </header>
     <main>
         <div id="contain"> <div id="summary">
-            <div id="sumcontent"><div id="location"><p>Franklin, Idaho</p></div>
+            <div id="sumcontent"><div id="location"><p id="place"></p></div>
                 <div id="temp" class="ginfo"><p> 74&deg; F</p></div>
-                <div id="low" class="ginfo"><p>Low
-                    <br/> 66&deg; F</p></div>
+                <div id="low" class="ginfo"><p>Low </p><p id="low_temp"></p></div>
                 <div id="high" class="ginfo"><p>High
-                    <br/> 90&deg; F </p></div>
+                    </p><p id="high_temp"></p></div>
             </div>
         </div>
         <div id="hourly">
@@ -55,9 +90,9 @@
         <div id="detail">
             <h2>Weather Details</h2>
             <p>Precipitation</p>
-            <p>0 &#37;</p>
+            <p id="precipitation"></p>
             <p>Wind</p>
-            <p>1 - 5 SW</p>
+            <p id="wind"></p>
         </div>
         </div>
     </main>

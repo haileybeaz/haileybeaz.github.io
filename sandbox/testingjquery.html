@@ -5,27 +5,7 @@
     <meta charset="utf-8">
     <title> AJAX test</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $.ajax({
-                url: "../js/weather.json"
-                , dataType: "json"
-                , success: function (data) {
-                    console.log(data);
-                    var location = data['Springfield']['City'];
-                    var state = data['Springfield']['State'];
-                    var temp_f = data['Springfield']['High'];
-                    console.log("Current temperature in " + location + " is: " + temp_f);
-                    var cur_location = $('#location');
-                    var temp = $('#temp');
-                    var message = $('#message');
-                    cur_location.text(location + ', ' + state);
-                    temp.text(temp_f);
-                    message.text("Current temperature in " + location + " is: " + temp_f)
-                }
-            });
-        });
-    </script>
+    <script src="weather.js"></script>
 </head>
 
 <body>
