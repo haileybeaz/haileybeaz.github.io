@@ -30,10 +30,7 @@ $(function () {
                 var wind = data['current_observation']['wind_string'];
                 var humid = data['current_observation']['relative_humidity'];
                 var time = data['current_observation']['observation_time'];
-                //                var temp_f = data['current_observation']['temp_f'];
-                //
-                //                console.log("Current temperature in " + location + " is: " + temp_f);
-                //
+
                 var cur_location = $('#cityDisplay');
                 var title_location = $('#location_home');
                 var cur_temp = $('#currentTemp');
@@ -42,8 +39,7 @@ $(function () {
                 var windString = $('#add2');
                 var humidity = $('#add3');
                 var update = $('small');
-                //                var message = $('#message');
-                //
+
                 cur_location.html(city + ', ' + state);
                 title_location.html(city + ', ' + state + ' | ' + 'Weather' + ' Home' );
                 cur_temp.html(temp + '&deg; F');
@@ -52,8 +48,7 @@ $(function () {
                 windString.html('Wind ' + wind);
                 humidity.html('Humidity of ' + humid);
                 update.html(time);
-                //                temp.text(temp_f);
-                //                message.text("Current temperature in " + location + " is: " + temp_f);
+
             }
         });
     }
