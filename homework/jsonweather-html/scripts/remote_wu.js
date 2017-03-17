@@ -24,7 +24,7 @@ $(function () {
                 console.log(data);
                 var city = data['location']['city'];
                 var state = data['location']['state'];
-                var temp = data['current_observation']['temp_f'];
+                var temp = parseInt(data['current_observation']['temp_f']);
                 var sum = data['current_observation']['weather'];
                 var feel = data['current_observation']['feelslike_f'];
                 var wind = data['current_observation']['wind_string'];
@@ -44,14 +44,14 @@ $(function () {
                 var update = $('small');
                 //                var message = $('#message');
                 //
-                cur_location.text(city + ', ' + state);
-                title_location.text(city + ', ' + state + ' | ' + 'Weather' + ' Home' );
-                cur_temp.text(temp + ' F');
-                summary.text(sum);
-                feel_temp.text('Feels like ' + feel + ' F');
-                windString.text('Wind ' + wind);
-                humidity.text('Humidity of ' + humid);
-                update.text(time);
+                cur_location.html(city + ', ' + state);
+                title_location.html(city + ', ' + state + ' | ' + 'Weather' + ' Home' );
+                cur_temp.html(temp + '&deg; F');
+                summary.html(sum);
+                feel_temp.html('Feels like ' + feel + '&deg; F');
+                windString.html('Wind ' + wind);
+                humidity.html('Humidity of ' + humid);
+                update.html(time);
                 //                temp.text(temp_f);
                 //                message.text("Current temperature in " + location + " is: " + temp_f);
             }
