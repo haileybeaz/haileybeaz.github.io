@@ -8,40 +8,6 @@
     <link href="normalize.css" type="text/css" rel="stylesheet" />
     <link href="main.css" type="text/css" rel="stylesheet" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $.ajax({
-                url: "js/weather.json"
-                , dataType: "json"
-                , success: function (data) {
-                    console.log(data);
-                    var location = data['Springfield']['City'];
-                    var state = data['Springfield']['State'];
-                    var temp_f = data['Springfield']['High'];
-                    var low = data['Springfield']['Low'];
-                    var high = data['Springfield']['High'];
-                    var precipitation = data['Springfield']['Precip'];
-                    var wind = data['Springfield']['Wind']
-                    var direction = data['Springfield']['Direction'];
-                    console.log("Current temperature in " + location + " is: " + temp_f);
-                    var place = $('#place');
-                    var low_temp = $('#low_temp');
-                    var high_temp = $('#high_temp');
-                    var precip = $('#precipitation');
-                    var windy = $('#wind');
-                        //                    var temp = $('#temp');
-                        //                    var message = $('#message');
-                    place.text(location + ', ' + state);
-                    low_temp.text(low + ' F');
-                    high_temp.text(high + ' F');
-                    precip.text(precipitation);
-                    windy.text(wind + ' ' + direction);
-                    //                    temp.text(temp_f);
-                    //                    message.text("Current temperature in " + location + " is: " + temp_f)
-                }
-            });
-        });
-    </script>
 </head>
 
 <body>

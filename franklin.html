@@ -3,45 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Franklin, Id | Feeling Lucky? Local Weather</title>
+    <title id="location_home">Franklin, Id | Feeling Lucky? Local Weather</title>
     <meta name="viewport" content="width=device-width">
     <link href="normalize.css" type="text/css" rel="stylesheet" />
     <link href="main.css" type="text/css" rel="stylesheet" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script>
-        jQuery (document).ready(function ($) {
-            $.ajax({
-                url: "js/weather.json"
-                , dataType: "json"
-                , success: function (data) {
-                    console.log(data);
-                    var location = data['Franklin']['City'];
-                    var state = data['Franklin']['State'];
-                    var temp_f = data['Franklin']['High'];
-                    var low = data['Franklin']['Low'];
-                    var high = data['Franklin']['High'];
-                    var precipitation = data['Franklin']['Precip'];
-                    var wind = data['Franklin']['Wind']
-                    var direction = data['Franklin']['Direction'];
-                    console.log("Current temperature in " + location + " is: " + temp_f);
-                    var place = $('#place');
-                    var low_temp = $('#low_temp');
-                    var high_temp = $('#high_temp');
-                    var precip = $('#precipitation');
-                    var windy = $('#wind');
-                    //                    var temp = $('#temp');
-                    //                    var message = $('#message');
-                    place.text(location + ', ' + state);
-                    low_temp.text(low + ' F');
-                    high_temp.text(high + ' F');
-                    precip.text(precipitation);
-                    windy.text(wind + ' ' + direction);
-                    //                    temp.text(temp_f);
-                    //                    message.text("Current temperature in " + location + " is: " + temp_f)
-                }
-            });
-        });
-    </script>
     </head>
 
 <body>
@@ -61,10 +27,10 @@
     <main>
         <div id="contain"> <div id="summary">
             <div id="sumcontent"><div id="location"><p id="place"></p></div>
-                <div id="temp" class="ginfo"><p> 74&deg; F</p></div>
-                <div id="low" class="ginfo"><p>Low </p><p id="low_temp"></p></div>
-                <div id="high" class="ginfo"><p>High
-                    </p><p id="high_temp"></p></div>
+                <div id="temp" class="ginfo"><p id="temp2"></p></div>
+                <div id="low" class="ginfo"><p id="low_temp"></p></div>
+                <div id="high" class="ginfo">
+                    <p id="high_temp"></p></div>
             </div>
         </div>
         <div id="hourly">
@@ -89,8 +55,8 @@
         </div>
         <div id="detail">
             <h2>Weather Details</h2>
-            <p>Precipitation</p>
-            <p id="precipitation"></p>
+            <p>Humidity</p>
+            <p id="humid"></p>
             <p>Wind</p>
             <p id="wind"></p>
         </div>
@@ -117,6 +83,7 @@
     <img id="wireframe1" src="homework/images/iPhone%205SE%20%E2%80%93%201.png" alt="mobile wireframe" />
     <img id="wireframe2" src="homework/images/iPad%20%E2%80%93%201.png" alt=" medium wireframe"/>
     <img id="wireframe3" src="homework/images/Web%201920%20%E2%80%93%201.png" alt=" large wireframe"/>
+    <script src="js/cur-weather.js"></script>
 </body>
 
 </html>
