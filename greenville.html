@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width">
 <link href="normalize.css" type="text/css" rel="stylesheet" />
 <link href="main.css" type="text/css" rel="stylesheet" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         </head>
 
 <body>
@@ -20,18 +20,16 @@
 <li><a href="index.html">Home</a></li>
 <li><a href="franklin.html">Franklin</a></li>
 <li><a href="greenville.html">Greenville</a></li>
-<li><a href="springfield.html">Springfield</a></li>
+<li><a href="#">Springfield</a></li>
 </ul>
 </nav>
 </header>
 <main>
 <div id="contain"> <div id="summary2">
 <div id="sumcontent"><div id="location"><p id="place"></p></div>
-<div id="temp" class="ginfo"><p> 63&deg; F</p></div>
-<div id="low" class="ginfo"><p>Low
-    </p><p id="low_temp"></p></div>
-<div id="high" class="ginfo"><p>High
-    </p><p id="high_temp"></p></div>
+<div id="temp" class="ginfo"><p id="temp2"></p></div>
+<div id="low" class="ginfo"><p id="low_temp"></p></div>
+<div id="high" class="ginfo"><p id="high_temp"></p></div>
 </div>
 </div>
 <div id="hourly">
@@ -56,8 +54,8 @@
 </div>
 <div id="detail">
 <h2>Weather Details</h2>
-<p>Precipitation</p>
-<p id="precipitation"></p>
+<p>Humidity</p>
+<p id="humid"></p>
 <p>Wind</p>
 <p id="wind"></p>
 </div>
@@ -84,6 +82,7 @@
 <img id="wireframe1" src="homework/images/iPhone%205SE%20%E2%80%93%201.png" alt="mobile wireframe" />
 <img id="wireframe2" src="homework/images/iPad%20%E2%80%93%201.png" alt="medium wireframe"/>
 <img id="wireframe3" src="homework/images/Web%201920%20%E2%80%93%201.png" alt="large wireframe"/>
+<script src="js/greenville-weather.js"></script>
 </body>
 
 </html>
