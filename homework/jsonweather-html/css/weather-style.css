@@ -56,7 +56,6 @@ body {
 /*The page navigation*/
 
 #page-nav ul {
-  border: 1px solid #000;
   border-bottom: 1px solid #fff;
   list-style: none;
 }

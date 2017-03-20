@@ -13,3 +13,6 @@
 #add3{
     background-color: #305df4;
 }
+#page-nav li{
+    display: inline-block;
+}
