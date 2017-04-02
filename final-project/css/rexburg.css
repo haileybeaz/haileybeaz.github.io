@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|PT+Serif')
+@import url('https://fonts.googleapis.com/css?family=Arimo|Muli')
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Arimo', sans-serif;
+font-family: 'Muli', sans-serif;
+*/
+* {
+        margin: 0;
+        padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'PT Serif', serif;
+    font-size: 60px;
+}
+p, a, address, li, label{
+    font-family: 'Muli', sans-serif;
+    font-size: 25px;
+}
+header{
+    background-color: #8A8D9D;
+    color: #ffffff;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: -30px;
+}
+nav{
+    margin-top: 15px;
+}
+#menu{
+    display: none;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+#toggle:checked ~ #menu{
+    display: flex;
+}
+#menu li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+label{
+    width: 100%;
+    text-align: center;
+    margin-left: 45.5%;
+}
+
+input{
+    display: none;
+}
+
+
+.image{
+    width: 100%;
+}
+#top-ten{
+    background-color: #223B5D;
+    color: #ffffff;
+}
+#top-ten div{
+    padding: 10px;
+}
+
+#map h1{
+    padding: 10px;
+    margin-top: 2px;
+}
+
+#history{
+    background-color: #466362;
+    color: #ffffff;
+}
+#history div{
+    padding: 10px;
+    line-height: 35px;
+}
+#video{
+    width: 100%;
+}
+#video p{
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #000;
+}
+.container2 { position:relative; }
+.container2 video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    z-index:1;
+}
+
+@media only screen and (min-width:700px){
+    .image{
+        width: 100%;
+    }
+    label{
+        display: none;
+    }
+    #toggle:not(:checked) ~ #menu{
+        display: inline;
+    }
+
+}

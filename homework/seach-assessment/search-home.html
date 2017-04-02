@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Center</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="/homework/menu-activity/css/weather-style.css" media="screen">
+    </head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Activity?
+* 1.Hailey Beazer
+* 2. Sarah Barrett
+* ******************************************** -->
+
+    <body>
+        <div id="wrapper">
+            <header id="page-header">
+                <h1>Weather Center</h1>
+                <h2 class="tagline">Know your weather</h2>
+            </header>
+            <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm"><input type="search" name="query" id="query">
+                <input type="submit" name="submit" value="Search" id="send"></form>
+            <ol id="searchResults"></ol>
+            <section class="weather-container">
+                <h1 id="cityDisplay"></h1>
+                <h2>Current Conditions</h2>
+                <ul id="current_conditions">
+                    <li id="currentTemp"></li>
+                    <li id="summary"></li>
+                    <li id="add1"></li>
+                    <li id="add2"></li>
+                    <li id="add3"></li>
+                </ul>
+            </section>
+            <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+            <script src="search-home.js"></script>
+        </div>
+    </body>
+
+</html>
