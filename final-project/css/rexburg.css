@@ -41,23 +41,29 @@ nav{
 }
 #toggle:checked ~ #menu{
     display: flex;
+    justify-content: center;
 }
-#menu li{
+#menu li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
 }
-
+#menu a:link, #menu a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+#menu a:hover{
+    transition: .5s;
+    background-color: #466362;
+    padding: 10px;
+}
 label{
     width: 100%;
     text-align: center;
     margin-left: 45.5%;
 }
-
 input{
     display: none;
 }
-
-
 .image{
     width: 100%;
 }
@@ -68,12 +74,10 @@ input{
 #top-ten div{
     padding: 10px;
 }
-
 #map h1{
     padding: 10px;
     margin-top: 2px;
 }
-
 #history{
     background-color: #466362;
     color: #ffffff;
@@ -106,11 +110,27 @@ input{
     .image{
         width: 100%;
     }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #main-logo{
+        margin-right: 20%;
+        padding-bottom: 20px;
+        flex-grow: 2;
+    }
+
     label{
         display: none;
     }
     #toggle:not(:checked) ~ #menu{
-        display: inline;
+        display: inline-flex;
     }
+    #container{
+        margin-bottom: -30px;
+        margin-left: 30px;
+    }
+
 
 }
