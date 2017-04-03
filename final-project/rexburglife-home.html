@@ -49,12 +49,13 @@
                 </div>
 
             </section>
-            <section id="map"><h1>Map</h1><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div id='gmap_canvas' style='height:350px;width:100%;'><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(43.8231096,-111.79242369999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.8231096,-111.79242369999997)});infowindow = new google.maps.InfoWindow({content:'Rexburg, Idaho<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></section>
+
             <section id="history">
                 <div><h1>History</h1>
                 <p>The city of Rexburg was founded in March 1883 when an intrepid group of pioneers decided to settle along the banks of the Teton River. They had been sent by church leaders in Salt Lake City, under the direction of Thomas E. Ricks, to settle the Upper Snake River Valley.<br/> In 1888, just five years after its initial settlement, civic and church leaders founded Ricks Academy, eventually becoming Ricks College (the largest private junior college in the US) and later (2001) Brigham Young University-Idaho, a four year liberal arts college. </p></div>
                 <img class="image" src="images/history.jpg" alt="historical picture of the first rick's academy"/>
             </section>
+            <section id="map"><h1>Map</h1><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div id='gmap_canvas' style='height:350px;width:100%;'><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(43.8231096,-111.79242369999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.8231096,-111.79242369999997)});infowindow = new google.maps.InfoWindow({content:'Rexburg, Idaho<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></section>
         </main>
         <footer>
         <p>Hailey Beazer | April 2017</p></footer>

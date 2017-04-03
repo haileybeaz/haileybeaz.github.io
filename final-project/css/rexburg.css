@@ -6,6 +6,7 @@ font-family: 'PT Serif', serif;
 font-family: 'Arimo', sans-serif;
 font-family: 'Muli', sans-serif;
 */
+/*main page css*/
 * {
         margin: 0;
         padding: 0;
@@ -147,3 +148,63 @@ input{
     }
 
 }
+/*content page css*/
+#unique-food{
+    background-color: #466362;
+    padding: 10px;
+}
+#unique-food h1{
+    color: #ffffff;
+}
+.sub-content{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    height: 200px;
+    background-color: #ffffff;
+}
+.sub-content h1, h2{
+    font-size: 40px;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.sub-content address{
+    font-size: 16px;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    width: 250px;
+    margin-top: -30px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.sub-content p{
+    font-size: 16px;;
+    flex-grow: 1;
+    line-height: 30px;
+    max-width: 700px;
+}
+#address-div{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+}
+
+#bus-address{
+    margin-top: -30px;
+    margin-bottom: 5px;
+}
+#rest-address{
+    margin-top: 5px;
+}
+#el-rancho{
+    margin-top: 10px;
+}
+.sub-image{
+    width: 200px;
+    height: 200px;
+}
+

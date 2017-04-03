@@ -3,35 +3,39 @@
 
 <head lang="en">
     <meta charset="utf-8">
-    <title>Rexburg Life | Tourism in Rexburg, Idaho</title>
+    <title>Rexburg Life | Food </title>
+    <link href="css/rexburg.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-    <header> <img id="main-logo" src='/final-project/images/logo.png' alt="rexburg life logo" />
+    <header> <div id="container"><img id="main-logo" src='images/logo.png' alt="rexburg life logo" /></div>
+    <nav><label for="toggle">Menu</label>
+        <input id="toggle" type="checkbox">
         <ul id="menu">
-            <li id="home">Home</li>
-            <li id="food">Food</li>
-            <li id="indoor">Indoor</li>
-            <li id="outdoor">Outdoor</li>
-            <li id="area">Surrounding Areas</li>
-            <li id="experiences">Experiences</li>
+            <li><a href="rexburglife-home.html">Home</a></li>
+            <li><a href="content-food.html">Food</a></li>
+            <li><a href="content-indoor.html">Indoor</a></li>
+            <li><a href="content-outdoor.html">Outdoor</a></li>
+            <li><a href="content-experiences">Experiences</a></li>
         </ul>
+    </nav>
     </header>
     <main>
         <section id="unique-food">
             <h1>Unique to Rexburg</h1>
             <div class="sub-content">
                 <img class="sub-image" src="images/theburg.jpg" alt="a yummy burger from the burg"/>
-                <h2>The Burg</h2><address>110 W 4th S, Rexburg, ID 83440</address><p>The Burg is a great place to get a yummy classic cheeseburger and delicious thick milkshakes. It was made by students for students, but everyone can enjoy a burger from The Burg.</p></div>
+                <div id="address-div"><h2>The Burg</h2><address>110 W 4th S, Rexburg, ID 83440</address></div><p>The Burg is a great place to get a yummy classic cheeseburger and delicious thick milkshakes. It was made by students for students, but everyone can enjoy a burger from The Burg.</p></div>
             <div class="sub-content">
                 <img class="sub-image" src="images/gatorjacks.jpg" alt="the gator from gator jacks"/>
-                <h2>Gator Jacks</h2><address>160 W 2nd S, Rexburg, ID 83440</address><p>Take a trip to the southern swamp and enjoy a fresh sandwich from Gator Jacks. It a make your own sandwich place and you can get a chance to try some alligator bites. This is the place for unique yummy sandwiches.</p></div>
+                <div id="address-div"><h2>Gator Jacks</h2><address>160 W 2nd S, Rexburg, ID 83440</address></div><p>Take a trip to the southern swamp and enjoy a fresh sandwich from Gator Jacks. It a make your own sandwich place and you can get a chance to try some alligator bites. This is the place for unique yummy sandwiches.</p></div>
             <div class="sub-content">
                 <img class="sub-image" src="images/taqueria.jpg" alt="the gator from gator jacks"/>
-                <h2>Taqueria El Rancho</h2><address>Bus: 312 W 4th S, Rexburg, ID 83440</address><address>Restaurant: 727 N 2nd E, Rexburg, ID 83440</address><p>Get a taste of authentic mexican food. Experience eating it in a bus or a sit down restaurant. Try their horchata its the best.</p></div>
+                <div id="address-div"><h2 id="el-rancho">Taqueria El Rancho</h2><address id="bus-address">Bus: 312 W 4th S, Rexburg, ID 83440</address><address id="rest-address">Restaurant: 727 N 2nd E, Rexburg, ID 83440</address></div><p>Get a taste of authentic mexican food. Experience eating it in a bus or a sit down restaurant. Try their horchata its the best.</p></div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Hailey Beazer | April 2017</p></footer>
 </body>
 
 </html>
