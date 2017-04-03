@@ -22,6 +22,11 @@ header{
     background-color: #8A8D9D;
     color: #ffffff;
 }
+footer{
+    background-color: #8A8D9D;
+    color: #ffffff;
+    padding: 10px;
+}
 #container{
     display: flex;
     justify-content: center;
@@ -73,6 +78,10 @@ input{
 }
 #top-ten div{
     padding: 10px;
+}
+#ten-list{
+    list-style: none;
+
 }
 #map h1{
     padding: 10px;
