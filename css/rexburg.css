@@ -49,6 +49,18 @@ nav{
     display: flex;
     justify-content: center;
 }
+
+#homework-menu li, #homework-menu a:link, #homework-menu a:visited{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-right: 20px;
+}
+#homework-menu a:hover{
+    transition: .5s;
+    background-color: #466362;
+    padding: 10px;
+}
 #menu li {
     display: inline-block;
     margin-right: 20px;
