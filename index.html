@@ -1,55 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
-<head>
-    <meta charset="utf-8" >
-    <title> Temporary Home Pages </title>
-    <meta name="viewport" content="width=device-width"> </head>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Rexburg Life | Tourism in Rexburg, Idaho</title>
+        <link href="css/rexburg.css" type="text/css" rel="stylesheet" />
+    </head>
 
-<body>
-    <header>
-        <h1>haileybeaz.github.io</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../homework/designprinciples.html"> Design Principles</a></li>
-                <li><a href="homework/mobilesite.html">Mobile Browsing Analysis</a></li>
-                <li><a href="homework/site-plan.html">Site Plan</a></li>
-                <li><a href="franklin.html">Franklin Page</a></li>
-                <li><a href="presentation.html">Presentation Typography</a></li>
-                <li><a href="homework/responsive_media/index.html">Responsive Media</a></li>
-                <li><a href="homework/Lesson4/index.htm">JavaScript Activity</a></li>
-                <li><a href="homework/jsonweather-html/index.html">Json Weather Activity</a></li>
-                <li><a href="/homework/cur-location.html">HTML Json Weather Activity</a></li>
-                <li><a href="/homework/seach-assessment/search-home.html">Search Assessment</a></li>
-                <li><a href="final-project/rexburglife-home.html">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Design Principles Homework</h1>
-    <a href="homework/designprinciples.html"> Design Principles Assignment</a>
-    <h1>Mobile Site Visitor Analysis</h1>
-    <a href="homework/mobilesite.html">Analysis Assignment</a>
-    <h1>Site-Plan Assignment</h1>
-    <a href="homework/site-plan.html">Site-Plan</a>
-    <h1>Franklin Page Assignment</h1>
-    <a href="franklin.html">Franklin Weather</a>
-    <h1>Presentation Assignment</h1>
-    <a href="presentation.html">Presentation Typography</a>
-    <h1>JavaScript Homework</h1>
-    <a href="homework/Lesson4/index.htm">JavaScript Activity Index</a>
-    <ul>
-        <li><a href="homework/Lesson4/InsertHTMLBegin.htm">Insert Html</a></li>
-        <li><a href="homework/Lesson4/animatedMenuBegin.htm">Animated Menus</a></li>
-        <li><a href="homework/Lesson4/toggleButtonBegin.htm">Toggle Button</a></li>
-        <li><a href="homework/Lesson4/DropDownMenuBegin.htm">Drop Down Menu</a></li>
-        <li><a href="homework/Lesson4/fruitBasketBegin.htm">Fruit Basket</a></li></ul>
-    <h1> Json Weather Practice </h1>
-    <a href="homework/jsonweather-html/index.html">Json Weather Activity</a>
-    <h1> Index Html JSon Practice </h1>
-    <a href="homework/cur-location.html">Index HTML JSON Activity</a>
-    <h1>Search Assessment</h1>
-    <a href="/homework/seach-assessment/search-home.html">Search Assessment</a>
-</body>
+    <body>
+        <header> <div id="container"><img id="main-logo" src='images/logo.png' alt="rexburg life logo" /></div>
+            <nav><label for="toggle">Menu</label>
+                <input id="toggle" type="checkbox">
+                <ul id="menu">
+                    <li><a href="rexburglife-home.html">Home</a></li>
+                    <li><a href="content-food.html">Food</a></li>
+                    <li><a href="content-indoor.html">Indoor</a></li>
+                    <li><a href="content-outdoor.html">Outdoor</a></li>
+                    <li><a href="content-experiences">Experiences</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="top-ten">
+                <img class="image" src="images/rexburg-aerial.jpg" alt="aerial view of rexburg idaho"/>
+                <div><h1>Top 10 Places to See</h1>
+                    <ul id="ten-list">
+                        <li>St. Anthony Sand Dunes </li>
+                        <li> PackSaddle Lake Hike </li>
+                        <li> Darby Wind Caves</li>
+                        <li> Goldbug Hot Springs</li>
+                        <li> Beaver Dick Park </li>
+                        <li> R Mountain </li>
+                        <li> Mesa Falls </li>
+                        <li> Rexburg Tabernacle</li>
+                        <li> Legacy Flight Museum </li>
+                        <li> Blacktail Park </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="video">
+                <div class="container2">
+                    <video src="images/r-mountain.mp4" width="100%" height="50%" preload="auto" autoplay loop>
+                        <source src="images/r-mountain.mp4" type="video/mp4" />
+                    </video>
+                    <div class="overlay">
+                        <p>View from R Mountain </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="history">
+                <div><h1>History</h1>
+                    <p>The city of Rexburg was founded in March 1883 when an intrepid group of pioneers decided to settle along the banks of the Teton River. They had been sent by church leaders in Salt Lake City, under the direction of Thomas E. Ricks, to settle the Upper Snake River Valley.<br/> In 1888, just five years after its initial settlement, civic and church leaders founded Ricks Academy, eventually becoming Ricks College (the largest private junior college in the US) and later (2001) Brigham Young University-Idaho, a four year liberal arts college. </p></div>
+                <img class="image" src="images/history.jpg" alt="historical picture of the first rick's academy"/>
+            </section>
+            <section id="map"><h1>Map</h1><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div id='gmap_canvas' style='height:350px;width:100%;'><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(43.8231096,-111.79242369999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.8231096,-111.79242369999997)});infowindow = new google.maps.InfoWindow({content:'Rexburg, Idaho<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></section>
+        </main>
+        <footer>
+            <p>Hailey Beazer | April 2017</p></footer>
+    </body>
 
 </html>
