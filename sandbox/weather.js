@@ -2,7 +2,7 @@
 
      function ajaxFromLocalJson(locationToGrab){
     $.ajax({
-        url: "../js/weather.json",
+        url: "../homework/js/weather.json",
         dataType: "json",
         success: function (data) {
             console.log(data);
@@ -48,3 +48,4 @@
      ajaxFromLocalJson('Franklin');
      ajaxFromApi();
 });
+
