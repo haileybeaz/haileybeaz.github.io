@@ -20,11 +20,11 @@ p, a, address, li, label{
     font-size: 25px;
 }
 header{
-    background-color: #8A8D9D;
+    background-color: #505150;
     color: #ffffff;
 }
 footer{
-    background-color: #8A8D9D;
+    background-color: #505150;
     color: #ffffff;
     padding: 10px;
 }
@@ -74,6 +74,7 @@ nav{
     background-color: #466362;
     padding: 10px;
 }
+
 label{
     width: 100%;
     text-align: center;
@@ -162,7 +163,7 @@ input{
 }
 /*content page css*/
 #unique-food{
-    background-color: #466362;
+    background-color: #223B5D;
     padding: 10px;
 }
 #unique-food h1{
@@ -218,5 +219,8 @@ input{
 .sub-image{
     width: 200px;
     height: 200px;
+}
+#planning{
+    padding: 10px;
 }
 
