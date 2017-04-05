@@ -6,7 +6,12 @@
     <title>Rexburg Life | Food </title>
     <link href="css/rexburg.css" type="text/css" rel="stylesheet" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script src="/javascript/rexburg.js"></script>
+    <script src="/javascript/get.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            getSection('Food');
+        });
+    </script>
 </head>
 
 <body>
@@ -25,26 +30,8 @@
         </nav>
     </header>
     <main>
-        <section id="unique-food">
+        <section id="unique-food" class="list">
             <h1 class="main-title"></h1>
-            <div class="sub-content">
-                <div class="sub-image"></div>
-                <div class="address-div">
-                    <h2 class="sub-title"></h2><address class="sub-address"></address></div>
-                <p class="sub-detail"></p>
-            </div>
-            <div class="sub-content">
-                <div class="sub-image1"></div>
-                <div class="address-div">
-                    <h2 class="sub-title1"></h2><address class="sub-address1"></address></div>
-                <p class="sub-detail1"></p>
-            </div>
-            <div class="sub-content">
-                <div class="sub-image2"></div>
-                <div class="address-div">
-                    <h2 class="sub-title2"></h2><address class="sub-address2"></address></div>
-                <p class="sub-detail2"></p>
-            </div>
         </section>
     </main>
     <footer>
