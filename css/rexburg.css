@@ -72,7 +72,7 @@ nav{
 #menu a:hover{
     transition: .5s;
     background-color: #466362;
-    padding: 10px;
+    padding: 15px;
 }
 
 label{
@@ -224,7 +224,7 @@ input{
 #el-rancho{
     margin-top: 10px;
 }
-.sub-image{
+#unique-food img {
     margin-left: 0;
 }
 #planning{
