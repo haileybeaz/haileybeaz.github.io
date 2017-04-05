@@ -106,6 +106,9 @@ input{
     padding: 10px;
     margin-top: 2px;
 }
+#map iframe{
+    width: 100%;
+}
 #history{
     background-color: #466362;
     color: #ffffff;
