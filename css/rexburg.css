@@ -165,11 +165,11 @@ input{
 
 }
 /*content page css*/
-#unique-food{
+.list {
     background-color: #223B5D;
     padding: 10px;
 }
-#unique-food h1{
+.list h1{
     color: #ffffff;
 }
 .main-title{
@@ -214,13 +214,6 @@ input{
     max-width: 250px;
 }
 
-#bus-address{
-    margin-top: -30px;
-    margin-bottom: 5px;
-}
-#rest-address{
-    margin-top: 5px;
-}
 #el-rancho{
     margin-top: 10px;
 }

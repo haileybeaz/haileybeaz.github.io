@@ -38,6 +38,24 @@
             "title": "Regional Rock Walls",
             "address": "881 Jet Stream Dr, Rexburg, ID 83440",
             "detail": "Need a place to climb and learn a new skill. Come to Regional Rock Walls to have a fun rock climbing experience."
+        },
+        {
+            "image": "../images/flight-museum.jpg",
+            "title": "Legacy Flight Museum",
+            "address": "400 Airport Rd, Rexburg, ID 83440",
+            "detail": "Take a step back into the aerial past. The local museum located at the airport in Rexburg helps you see planes from the past."
+        },
+        {
+            "image":"../images/craze.jpg",
+            "title":"Craze",
+            "address":"30 College Ave #101, Rexburg, ID 83440",
+            "detail":"Grab your friends and have fun at Craze. This is a the place to play fun archade games and battle in a game of laser tag."
+        },
+        {
+            "image":"../images/escape-house.jpg",
+            "title": "The Escape House",
+            "address":"56 Professional Plaza, Rexburg, ID 83440",
+            "detail":"If you life puzzles and a challenging one come to the escape house and solve mysteries and puzzles to get your self out of the rooms. "
         }
     ],
     "Outdoor":[
