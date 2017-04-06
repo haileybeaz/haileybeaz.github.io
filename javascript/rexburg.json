@@ -73,6 +73,18 @@
          "title": "Goldbug Hot Springs",
          "address": "Salmon - Challis National Forest, Salmon, ID 83467",
          "detail": "Its a little of a drive, but these hot springs will be a desination you will remember. Take the hike up to these natural hot tubs and relax with a view."
+        },
+        {
+         "image": "../images/kelly-canyon.jpg",
+         "title": "Kelly Canyon Ski Resort",
+            "address": "5488 Kelly Canyon Rd, Ririe, ID 83443",
+            "detail": "Want somethig fun to do in the snow? Grab your snow gear and take a trip to Kelly Canyon Ski Resort. They have night skiing available for those that don't want to spend as much money on lift tickets."
+        },
+        {
+        "image":"../images/packsaddle.jpg",
+        "title": "Packsaddle Lake",
+        "address":"Packsaddle Lake, Idaho 83452",
+        "detail":"It may be a steep little hike, but lake is worth it. Only about a half hour from Rexburg you can experience beautiful nature."
         }
     ]
 }
