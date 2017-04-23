@@ -17,6 +17,13 @@
             "title": "Taqueria El Rancho",
             "address": "312 W 4th S, Rexburg, ID 83440",
             "detail": "Get a taste of authentic mexican food. Experience eating it in a bus. Try their horchata its the best."
+        },
+        {
+            "image":
+            "../images/tyleriscool.jpg",
+            "title": "Tyler Beazer is Cool",
+            "address": "Wherever he is present",
+            "detail":"No explanation needed."
         }
     ],
 
